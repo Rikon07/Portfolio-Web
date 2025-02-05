@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    background-color: #1A1A1A;
+}
+:root{
+    --primary: #0FF;
+}
+body{
+    font-family: "Inter", serif;
+}
+header{
+    background-color: #1A1A1A;
+}
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+nav{
+    margin: 16px auto;
+    max-width: 884px;
+    margin-bottom: 72px;
+}
+.nav-logo {
+    font-size: 84px;
+    color: #0FF;
+    animation: fadeInScale 2s ease-out;
+}
+.mid{
+    display: flex;
+    gap: 1.25rem;
+}
+.mid a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: aliceblue;
+    font-weight: 700;
+}
+.mid a:hover {
+    text-decoration: underline;
+    transition: text-decoration 0.3s ease;
+    padding: 4px 7px;
+    color: #0FF;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+.nav-btn{
+    color: #FFF;
+    text-decoration: none;
+    background-color: #0FF;
+    border-radius: 12px;
+    border: none;
+    padding: 10px 32px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+.nav-btn:hover {
+    background: linear-gradient(45deg, #00FFFF, #00BFFF);
+    color: rgb(136, 129, 129);
+}
+.menu{
+    color: #0FF;
+    font-size: 32px;
+    display: none;
+}
+
+.banner{
+    max-width: 1296px;
+    margin: auto;
+    font-family: "Inter", serif;
+    align-items: center;
+    border-bottom: 96px solid #1A1A1A;
+    gap: 64px;
+}
+.banner-title{
+    color: aliceblue;
+    font-size: 4rem;
+    color: var(--primary);
+}
+@keyframes typewriter {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  
+  .rik {
+    display: inline;
+    overflow: hidden;
+    border-right: .15em solid #0FF;  /* Adds the blinking cursor effect */
+    white-space: nowrap;
+    width: 0;
+    animation: typewriter 4s steps(40) 1s 1 normal both, blink 0.75s step-end infinite;
+    font-weight: bold;
+  }
+  
+  /* Blinking cursor */
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+
+  .links{
+    color: var(--primary);
+    font-size: 2rem;
+  }
+  .links:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  /* Portfolio section */
+  .port{
+    max-width: 1024px;
+    margin: 0 auto;
+    margin-bottom: 72px;
+  }
+  .port-title{
+     font-size: 3.5rem;
+     text-align: center;
+     margin-bottom: 24px;
+  }
+  .port-desc{
+    padding: 16px;
+  }
+  .pro-button{
+    background-color: gray;
+    color: white;
+    padding: 6px 16px;
+    border-radius: 0.5rem;
+  }
+  .pro-container{
+    border: 1px solid gray;
+    padding: 8px 14px;
+  }
+  .pro-container-2{
+    border: 1px solid gray;
+    padding: 8px 14px;
+  }
+
+
+/* Responsive for Smaller screens */
+@media screen and (max-width: 576px){
+    header{
+        padding: 0 16px;
+    }
+    .nav-logo {
+        font-size: 48px;
+    }
+    .menu{
+        display: block;
+    }
+    .mid,
+    .right-nav{
+        display: none;
+    }
+
+    .banner{
+        flex-direction: column;
+        justify-content: center;
+        gap: 16px;
+        border-bottom: 48px solid #1A1A1A;
+    }
+    .pro-container{
+        flex-direction: column;
+    }
+    .pro-container-2{
+        flex-direction: column-reverse;
+    }
+}
+
+/* Responsive for Medium screens */
+@media screen and (min-width: 576px) and (max-width: 1024px){
+    header{
+        padding: 0 32px;
+    }
+    .nav-logo {
+        font-size: 64px;
+    }
+    .menu{
+        display: block;
+    }
+    .mid,
+    .right-nav{
+        display: none;
+    }
+
+    .banner{
+        flex-direction: column;
+        justify-content: center;
+        gap: 16px;
+        border-bottom: 64px solid #1A1A1A;
+    }
+    .pro-container{
+        flex-direction: column;
+    }
+    .pro-container-2{
+        flex-direction: column-reverse;
+    }
+}
+
+/* Responsive for Medium Large screens */
+@media screen and (min-width: 1024px) and (max-width: 1280px){
+    header{
+        padding: 0 32px;
+    }
+}
