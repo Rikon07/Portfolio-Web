@@ -5,6 +5,9 @@
 :root{
     --primary: #0FF;
 }
+.blue{
+    color:#0FF;
+}
 body{
     font-family: "Inter", serif;
 }
@@ -176,6 +179,9 @@ nav{
     }
     .pro-container-2{
         flex-direction: column-reverse;
+    }
+    .skills{
+        flex-direction: column;
     }
 }
 
