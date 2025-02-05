@@ -87,14 +87,7 @@ nav{
     font-size: 4rem;
     color: var(--primary);
 }
-@keyframes typewriter {
-    0% {
-      width: 0;
-    }
-    100% {
-      width: 100%;
-    }
-  }
+
   
   .rik {
     display: inline;
@@ -102,7 +95,7 @@ nav{
     border-right: .15em solid #0FF;  /* Adds the blinking cursor effect */
     white-space: nowrap;
     width: 0;
-    animation: typewriter 4s steps(40) 1s 1 normal both, blink 0.75s step-end infinite;
+    animation: blink 0.75s step-end infinite;
     font-weight: bold;
   }
   
@@ -141,6 +134,11 @@ nav{
     color: white;
     padding: 6px 16px;
     border-radius: 0.5rem;
+  }
+  .pro-button:hover{
+    background-color: #00BFFF;
+    color: #FFF;
+    transition: background-color 0.3s ease-in-out;
   }
   .pro-container{
     border: 1px solid gray;
@@ -183,6 +181,7 @@ nav{
     .skills{
         flex-direction: column;
     }
+    
 }
 
 /* Responsive for Medium screens */
