@@ -71,6 +71,8 @@ nav{
 .menu{
     color: #0FF;
     font-size: 32px;
+}
+.menu-bar{
     display: none;
 }
 
@@ -81,11 +83,18 @@ nav{
     align-items: center;
     border-bottom: 96px solid #1A1A1A;
     gap: 64px;
+    justify-content: space-between;
 }
 .banner-title{
     color: aliceblue;
     font-size: 4rem;
     color: var(--primary);
+}
+.banner-left{
+    max-width: 66%;
+}
+.banner-img{
+    max-width: 100%;
 }
 
   
@@ -158,7 +167,7 @@ nav{
     .nav-logo {
         font-size: 48px;
     }
-    .menu{
+    .menu-bar{
         display: block;
     }
     .mid,
@@ -172,8 +181,14 @@ nav{
         gap: 16px;
         border-bottom: 48px solid #1A1A1A;
     }
+    .ban-btn{
+        display: none;
+    }
     .pro-container{
         flex-direction: column;
+    }
+    .banner-left{
+        max-width: 100%;
     }
     .pro-container-2{
         flex-direction: column-reverse;
@@ -192,7 +207,7 @@ nav{
     .nav-logo {
         font-size: 64px;
     }
-    .menu{
+    .menu-bar{
         display: block;
     }
     .mid,
@@ -205,6 +220,9 @@ nav{
         justify-content: center;
         gap: 16px;
         border-bottom: 64px solid #1A1A1A;
+    }
+    .banner-left{
+        max-width: 100%;
     }
     .pro-container{
         flex-direction: column;
